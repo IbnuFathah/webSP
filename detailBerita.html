@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Berita | SMKN 1 Kawali</title>
+    <title>Detail Berita | SMKN 1 Kawali</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,39 +21,37 @@
         <a href="galeri.html">Galeri</a>
     </nav>
 </header>
-<h2 class="judul">Prestasi &amp; Berita Terkini</h2>
-<section class="berita">
-    <article class="card">
-        <img src="assets/img/berita2.jpg" alt="Juara 3 FLS3N Jawa Barat">
-        <div class="card-body">
-            <h3>Juara 3 FLS3N Jawa Barat</h3>
-            <small>&#128204; 1 Agustus 2026</small>
-            <p>Siswa jurusan SP &amp; SK berhasil meraih Juara 3 FLS3N tingkat Jawa Barat dalam kategori Musik Tradisional.</p>
-            <!-- Parameter ?id=1 ditambahkan -->
-            <a href="detailBerita.html?id=1" class="btn btn-sm">Baca Selengkapnya</a>
-        </div>
+
+<main class="detail-berita" style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+    
+    <a href="berita.html" class="btn btn-sm" style="display: inline-block; margin-bottom: 20px; text-decoration: none; background-color: #f0f0f0; color: #333; padding: 8px 15px; border-radius: 4px;">&larr; Kembali ke Berita</a>
+
+    <!-- Atribut id ditambahkan agar dikenali JS -->
+    <h1 id="judul-detail" style="font-size: 2em; margin-bottom: 10px;">Memuat Judul...</h1>
+    
+    <div class="meta" style="color: #666; margin-bottom: 20px; font-size: 0.9em;">
+        <span id="tanggal-detail">&#128204; Memuat...</span> | 
+        <span>Oleh: Admin Humas SP &amp; SK</span>
+    </div>
+
+    <div class="gambar-utama" style="margin-bottom: 30px;">
+        <img id="gambar-detail" src="" alt="Gambar Berita" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <p id="caption-detail" style="text-align: center; color: #777; font-size: 0.8em; margin-top: 8px;"></p>
+    </div>
+
+    <article id="konten-detail" class="artikel-konten" style="line-height: 1.8; color: #444; font-size: 1.05em;">
+        <p>Memuat konten berita...</p>
     </article>
-    <article class="card">
-        <img src="assets/img/berita1.jpg" alt="Juara Harapan 1 FLS3N">
-        <div class="card-body">
-            <h3>Juara Harapan 1 FLS3N</h3>
-            <small>&#128204; 1 Agustus 2026</small>
-            <p>Selain musik tradisional, perwakilan jurusan juga meraih Juara Harapan 1 tingkat Jawa Barat dalam kategori Vocal.</p>
-            <!-- Parameter ?id=2 ditambahkan -->
-            <a href="detailBerita.html?id=2" class="btn btn-sm">Baca Selengkapnya</a>
+
+    <div class="share-artikel" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <h4 style="margin-bottom: 10px;">Bagikan berita ini:</h4>
+        <div class="sosmed-share">
+            <a href="#" style="display:inline-block; padding:8px 12px; background:#1877f2; color:#fff; border-radius:4px; text-decoration:none; margin-right:5px; font-size: 0.9em;">Facebook</a>
+            <a href="#" style="display:inline-block; padding:8px 12px; background:#25D366; color:#fff; border-radius:4px; text-decoration:none; font-size: 0.9em;">WhatsApp</a>
         </div>
-    </article>
-    <article class="card">
-        <img src="assets/img/galeri4.jpg" alt="Pengisi Acara Event Daerah">
-        <div class="card-body">
-            <h3>Pengisi Acara Event Daerah</h3>
-            <small>&#128204; Baru-baru ini</small>
-            <p>Siswa-siswi secara rutin melatih mental dan skill dengan mengisi berbagai acara di beberapa event penting tingkat daerah.</p>
-            <!-- Parameter ?id=3 ditambahkan -->
-            <a href="detailBerita.html?id=3" class="btn btn-sm">Baca Selengkapnya</a>
-        </div>
-    </article>
-</section>
+    </div>
+</main>
+
 <footer id="kontak">
     <h2>KONTAK KAMI</h2>
     <div class="footer-grid">
