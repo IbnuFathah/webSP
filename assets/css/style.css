@@ -24,7 +24,7 @@ nav a:hover, nav a.active { color: var(--gold); }
 .judul { text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; margin: 70px 0 50px; }
 .judul-galeri { margin-bottom: 70px; }
 
-/* Hero */
+
 .hero { min-height: calc(100vh - 80px); display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; padding: 40px 20px; color: #fff;
     background: linear-gradient(rgba(70,0,10,.7), rgba(0,0,0,.85)), url('../img/landpage.jpg') center/cover #4a0a14; }
@@ -89,4 +89,163 @@ footer h2 { color: var(--gold); text-align: center; font-size: 32px; margin-bott
     .galeri { grid-template-columns: repeat(2, 1fr); }
     .fasilitas { grid-template-columns: repeat(2, 1fr); }
     .profile-box { padding: 20px; margin: 0 15px 60px; }
+}
+
+/* --- TAMBAHAN UNTUK HOMEPAGE --- */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.bg-light {
+    background-color: #f9f9f9; /* Memberikan selang-seling warna background agar tidak monoton */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+/* Profil Preview Styling */
+.profile-preview {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.profile-img {
+    flex: 1;
+}
+.profile-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.profile-text {
+    flex: 1;
+}
+.profile-text h3 {
+    color: #b39352; /* Warna emas menyesuaikan tombol */
+    margin-bottom: 15px;
+}
+.profile-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Berita & Prestasi Card Styling */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.news-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.news-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.gold-text {
+    color: #b39352;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.news-content small {
+    color: #888;
+    margin-bottom: 15px;
+    display: block;
+}
+.news-content p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Mendorong tombol ke bawah */
+}
+
+/* Button Styling (Mengikuti desain) */
+.btn-gold {
+    background-color: #b39352; /* Emas */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+.btn-gold:hover {
+    background-color: #927740;
+}
+.btn-outline {
+    border: 2px solid #b39352;
+    color: #b39352;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.btn-outline:hover {
+    background-color: #b39352;
+    color: white;
+}
+
+/* Galeri Home Styling */
+.gallery-grid-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.gallery-grid-home img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Responsive agar bagus di HP */
+@media (max-width: 768px) {
+    .profile-preview {
+        flex-direction: column;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid-home {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
